@@ -1,0 +1,38 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SelectWeapon : MonoBehaviour {
+
+    public CuttableObjectController cuttableObjectController;
+    public int weaponNumber;
+    public void SelectedTree()
+    {
+        if (weaponNumber == 0)
+        {
+            cuttableObjectController.SelectedKnife();
+        }
+
+        if (weaponNumber == 1)
+        {
+            cuttableObjectController.SelectedAxe();
+        }
+
+        if (weaponNumber == 2)
+        {
+            cuttableObjectController.SelectedScissors();
+        }
+
+        if (weaponNumber == 3)
+        {
+            cuttableObjectController.SelectedHammer();
+        }
+        if (weaponNumber == 4)
+        {
+            cuttableObjectController.SelectedChainsaw();
+        }
+       
+    }
+
+  
+}
